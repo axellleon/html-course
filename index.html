@@ -1,90 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML Course</title>
-  </head>
-  <body>
-    <table cellspacing = "15">
-      <tr>
-        <td><img src="avatar.jpeg" width="300" alt="Тут должна была быть моя фотка"></td>
-        <td>
-          <h1>Ильин Алексей</h1>
-          <p><em>Я работаю руководителем продукта <strong>БИТ.ФИНАНС</strong></em></p>
-        </td>
-      </tr>
-    </table>
-    
-    
-    
-    <p>Я люблю летать в аэротрубе</p>
-    <hr>
 
-    <h2>Мои социальные сети</h2>
-    <ul type = "square">
-      <li><a href="https://instagtam.com" target="blanc">Инстаграм</a></li>
-      <li>Телеграм</li>
-    </ul>
-    
-    <hr>
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <h2>Мои хобби</h2>
-    <ol type = "I">
+<body>
+
+  <div class="container">
+
+    <div class="info">
+      <img src="avatar.jpeg" width="300" alt="Тут должна была быть моя фотка" class="avatar">
+
+      <div class="info-text">
+        <h1>Ильин Алексей</h1>
+        <p><em>Я работаю руководителем продукта <strong>БИТ.ФИНАНС</strong></em></p>
+        <p>Я люблю летать в аэротрубе</p>
+
+
+
+        <h4>Мои социальные сети</h4>
+
+        <a href="https://instagtam.com" target="blanc">Инстаграм</a>
+        |
+        <a href="https://instagtam.com" target="blanc">Телеграм</a>
+      </div>
+    </div>
+
+    <div class="card bg-yellow">
+      <h2>Мои хобби</h2>
+      <ol type="1" class="list">
         <li>Проектное управление</li>
         <li>Разработка</li>
         <li>Воркаут</li>
-    </ol>
-    <hr>
+      </ol>
+    </div>
 
-    <h2>Опыт работы</h2>
-    <table border="1">
-      <thead>
+    <div class="card bg-green">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Компания</th>
+            <th>Должность</th>
+            <th>Период работы</th>
+          </tr>
+        </thead> -->
         <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Период работы</th>
-      </tr>
-    </thead>
+          <td>Первый БИТ</td>
+          <td>Руководитель отдела внедрения</td>
+          <td>2012-2014</td>
+        </tr>
+        <tr>
+          <td>МонолитПром</td>
+          <td>Руководитель проектов</td>
+          <td>2014-20216</td>
+        </tr>
+      </table>
+    </div>
 
-      <tr>
-        <td>Первый БИТ</td>
-        <td>Руководитель отдела внедрения</td>
-        <td>2012-2014</td>
-      </tr>
-      <tr>
-        <td>МонолитПром</td>
-        <td>Руководитель проектов</td>
-        <td>2014-20216</td>
-      </tr>
-    </table>
-    <hr>
-    <h2>YouTube Курсы</h2>
-    <a href="youtube.html" target="blanc">Посмотреть список курсов</a>
-    <br>
-    <hr>
+    <div class="card bg-red">
+      <h2>YouTube Курсы</h2>
+      <ul class="link-list">
+        <li>
+          <a href="https://stratoplan-school.com">Teamlead:101</a>
+        </li>
+      </ul>
+    </div>
 
-    <h2>Связаться со мной</h2>
 
-    <form>
-      <label for="name">Ваше имя: </label>
-      <input type="text" id="name" placeholder="начните вводить ваше имя">
-    </form>
-    <br>
-    <form>
-      <label for="email">Ваше email: </label>
-      <input type="text" id="email" placeholder="начните вводить ваше email">
-    </form>
+    <div class="contact">
+      <h2>Связаться со мной</h2>
 
-    <br>
-    <form>
-      <label for="text">Ваше сообщенеи: </label>
-      <textarea name="text" id="text" cols="30" rows="10"></textarea>
-    </form>
+      <div class="row">
+        <div class="form-group">
+          <form>
+            <label for="name">Ваше имя: </label>
+            <input type="text" id="name" placeholder="начните вводить ваше имя">
+          </form>
+        </div>
 
-    <br>
-    <form>
-      <input type="submit" value="Связаться!">
-    </form>
+        <div>
+          <form class="form-group">
+            <label for="email">Ваше email: </label>
+            <input type="text" id="email" placeholder="начните вводить ваше email">
+          </form>
+        </div>
+      </div>
 
-  </body>
+      <div class="form-group">
+        <form>
+          <label for="text">Ваше сообщенеи: </label>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+
+      <input class="btn" type="submit" value="Связаться!">
+
+      <div class="position">
+        <div class="box"></div>
+      </div>
+
+    </div>
+
+
+
+    <div style="margin-bottom: 500px;"></div>
+</body>
+
 </html>
